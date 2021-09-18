@@ -1,7 +1,7 @@
 import { StylesProvider } from '@material-ui/core'
 import React from 'react'
-import { mount } from 'marketingApp/MarketingApp'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import { mount } from 'marketingApp/MarketingApp'
 import AppRenderer from './components/AppRenderer'
 
 const MarketingApp = () => <AppRenderer mount={mount} />
