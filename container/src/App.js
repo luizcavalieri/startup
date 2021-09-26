@@ -11,13 +11,13 @@ const MarketingApp = () => <AppRenderer mount={mount} />
 
 export default () => {
   return (
-    <StylesProvider generateClassName={generateClassName}>
-      <BrowserRouter>
+    <BrowserRouter>
+      <StylesProvider generateClassName={generateClassName}>
         <Header />
         <Switch>
-          <Route component={MarketingApp} exact path="/" />
+          <Route component={MarketingApp} path="/" />
         </Switch>
-      </BrowserRouter>
-    </StylesProvider>
+      </StylesProvider>
+    </BrowserRouter>
   )
 }
