@@ -9,8 +9,12 @@ export default ({ mount }) => {
     const { onParentNavigate } = mount(
       ref.current,
       {
+        initialPath: location.pathname,
         onNavigate: ({ pathname: nextPathname }) => {
           if (location.pathname !== nextPathname) push(nextPathname)
+        },
+        onSignIn: () => {
+          console.log('Sign in handler')
         }
       }
     )
